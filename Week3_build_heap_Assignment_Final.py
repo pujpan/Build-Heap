@@ -46,12 +46,7 @@ def build_heap(data,n):
 
     Returns a sequence of swaps performed by the algorithm.
     """
-    # The following naive implementation just sorts the given sequence
-    # using selection sort algorithm and saves the resulting sequence
-    # of swaps. This turns the given array into a heap, but in the worst
-    # case gives a quadratic number of swaps.
-    #
-    # TODO: replace by a more efficient implementation
+   
     roundel = round(len(data)/2)
 
     size = n
@@ -76,16 +71,6 @@ def main():
     assert len(data) == n
 
     swaps = build_heap(data,n)
-    
-    #print(data)
-    
-    '''
-    print(len(swaps))
-    for i, j in swaps:
-        print(i, j)
-        
-        
-    '''
 
 
 if __name__ == "__main__":
